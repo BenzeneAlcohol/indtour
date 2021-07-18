@@ -1,0 +1,90 @@
+#Carousal{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #444444;
+}
+
+.image{
+    width: 1000px;
+    height: 600px;
+    border-radius: 10px;
+}
+
+.right-arrow{
+    position: absolute;
+    top: 50%;
+    right: 32px;
+    font-size: 3rem;
+    color: #000;
+    z-index: 50;
+    cursor: pointer;
+}
+.left-arrow{
+    position: absolute;
+    top: 50%;
+    left: 32px;
+    font-size: 3rem;
+    color: #000;
+    z-index: 50;
+    cursor: pointer;
+}
+
+.slide{
+    opacity: 0;
+    transition-duration: 1s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.slide.active{
+    opacity: 1;
+    transition-duration: 1s;
+    transform: scale(1.08);
+}
+
+.slide h2{
+    font-family: 'Roboto', sans-serif;
+    color: #EDEDED;
+    margin-top: 8px;
+    margin-bottom: 0px;
+    font-weight: bold;
+}
+
+.newFlex{
+    margin-top: 20px;
+}
+
+.buttonbtnbtnbtn{
+    text-decoration: none;
+    border-radius: 50px;
+    background: #39A9CB;
+    white-space: nowrap;
+    padding: 14px 48px;
+    color: #010606;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+}
+
+a:link{
+    text-decoration: none!important;
+}
+
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+.buttonbtnbtnbtn:hover {
+    transition: all 0.2s ease-in-out;
+}
